@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'GET /api/todos' do
+describe Api::Controllers::Todo::Index do
   let(:action) { Api::Controllers::Todo::Index.new }
   let(:params) { Hash[] }
 
