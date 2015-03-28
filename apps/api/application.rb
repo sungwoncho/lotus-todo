@@ -17,7 +17,7 @@ module Api
       #
       load_paths << [
         'controllers',
-        'views'
+        'presenters'
       ]
 
       # Handle exceptions with HTTP statuses (true) or don't catch them (false).
@@ -106,11 +106,11 @@ module Api
 
       # The layout to be used by all views
       #
-      layout :application # It will load Api::Views::ApplicationLayout
+      # layout :application # It will load Api::Views::ApplicationLayout
 
       # The relative path to templates
       #
-      templates 'templates'
+      # templates 'templates'
 
       ##
       # ASSETS
