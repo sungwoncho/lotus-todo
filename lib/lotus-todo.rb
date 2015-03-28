@@ -1,6 +1,4 @@
 require 'lotus/model'
-require "lotus/model/adapter/sql_adapter"
-
 Dir["#{ __dir__ }/lotus-todo/**/*.rb"].each { |file| require_relative file }
 
 Lotus::Model.configure do

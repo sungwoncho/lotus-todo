@@ -1,13 +1,9 @@
-# Configure your database mapping here.
-#
-# Intended for specifying specific slice mappings.
-#
-# See: http://www.rubydoc.info/gems/lotus-model/#Usage
-#
-# collection :users do
-#   entity     User
-#   repository UserRepository
-#
-#   attribute :id,   Integer
-#   attribute :name, String
-# end
+collection :todos do
+  entity     Todo
+  repository TodoRepository
+
+  attribute :id,         Integer
+  attribute :body,       String
+  attribute :created_at, DateTime
+  attribute :updated_at, DateTime
+end
