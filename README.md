@@ -9,7 +9,7 @@ A todo application built with [Lotus](https://github.com/lotus/lotus) and [Angul
 
 ## Architecture
 
-Lotus-Todo is divided into two micro applications: `apps/api` and `apps/web`. `apps/api` is written in Ruby and handles backend. `apps/web` is an angular application that handles the frontend.
+Lotus-Todo is divided into two micro applications: `apps/api` and `apps/web`. `apps/api` is a pure Lotus application that handles backend. `apps/web` is an angular application that handles the frontend.
 
 The core of the application lives in `lib/` (database mappings, interactors, etc.). `apps/api` and `apps/web` both rely on this core.
 
