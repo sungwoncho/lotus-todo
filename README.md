@@ -1,6 +1,11 @@
 # Lotus-Todo
 
-A Todo application built with [Lotus](https://github.com/lotus/lotus) and [Angular](https://github.com/angular/angular.js).
+A todo application built with [Lotus](https://github.com/lotus/lotus) and [AngularJS](https://github.com/angular/angular.js).
+
+## Why?
+
+* To demonstrate how Lotus can decouple a monolithic application into multiple, modular applications.
+* To showcase how to use AngularJS with Lotus.
 
 ## Architecture
 
@@ -33,6 +38,7 @@ Feel free to open pull requests.
 * Pagination
 * Record created_at and order by created_at
 * Length validation
+* Improved CSS
 
 ## License
 
