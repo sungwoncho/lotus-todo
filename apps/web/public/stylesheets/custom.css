@@ -2,6 +2,19 @@
   margin-top: 50px;
 }
 
+.main-container h1 {
+  margin-bottom: 30px;
+}
+
 .todo-form {
   margin-top: 50px;
+}
+
+li.todo-item {
+  padding: 25px 10px;
+  border-bottom: 1px solid;
+}
+
+li.todo-item:last-child {
+  border-bottom: none;
 }
