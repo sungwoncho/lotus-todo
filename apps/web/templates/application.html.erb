@@ -1,9 +1,18 @@
 <!doctype HTML>
 <html>
   <head>
-    <title>Web</title>
+    <title>Lotus Todo</title>
   </head>
-  <body>
+  <body ng-app='lotusTodo'>
     <%= yield %>
+
+    <!-- Require angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
+
+    <!-- Require local javascripts -->
+    <script src="/javascripts/ng-app/app.js"></script>
+    <script src="/javascripts/ng-app/controllers/todoController.js"></script>
+    <script src="/javascripts/ng-app/services/todo.js"></script>
   </body>
 </html>
