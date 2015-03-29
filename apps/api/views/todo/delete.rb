@@ -1,9 +1,8 @@
 module Api
   module Views
     module Todo
-      class Create
+      class Delete
         include Lotus::View
-
 
         ##
         # No-op
