@@ -1,6 +1,7 @@
 module Api::Controllers::Todo
   class Create
     include Api::Action
+    accept :json
 
     before :validate_params
 
@@ -12,6 +13,7 @@ module Api::Controllers::Todo
       CreateTodo.new(params).call
 
       self.status = 201
+      self.body = {}
     end
 
     private

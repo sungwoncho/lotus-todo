@@ -1,5 +1,24 @@
-<div ng-controller='TodoController'>
-  <div ng-repeat='todo in todos'>
-    {{ todo }}
+<div ng-controller='TodoController' class='container'>
+
+  <div class="jumbotron main-container">
+    <h1 class="text-center">Lotus Todo</h1>
+
+    <div class="row todo-form">
+      <div class="col-md-6 col-md-offset-3">
+        <form ng-submit='createTodo()'>
+          <input type="text" name="body" class="form-control" placeholder='What do you have to do?' ng-model='todo.body'>
+          
+          <input type="submit" name="submit" value="Add task" class="btn btn-lg btn-success">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-repeat='todo in todos'>
+        {{ todo }}
+      </div>
+    </div>
   </div>
 </div>

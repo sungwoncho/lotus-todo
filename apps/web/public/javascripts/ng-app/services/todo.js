@@ -2,5 +2,5 @@
 
 angular.module('lotusTodo')
   .factory('Todos', ['$resource', function ($resource) {
-    return $resource('/api/todo/', { format: 'json' })
+    return $resource('/api/todo')
   }]);

@@ -17,7 +17,8 @@ module Api
       #
       load_paths << [
         'controllers',
-        'presenters'
+        'presenters',
+        'views'
       ]
 
       # Handle exceptions with HTTP statuses (true) or don't catch them (false).
@@ -70,14 +71,14 @@ module Api
       # Default format for the requests that don't specify an HTTP_ACCEPT header
       # Argument: A symbol representation of a mime type, default to :html
       #
-      # default_format :html
+      default_format :json
 
       # HTTP Body parsers
       # Parse non GET responses body for a specific mime type
       # Argument: Symbol, which represent the format of the mime type (only `:json` is supported)
       #           Object, the parser
       #
-      # body_parsers :json
+      body_parsers :json
 
       ##
       # DATABASE
